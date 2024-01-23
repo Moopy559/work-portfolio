@@ -1,5 +1,6 @@
 /* Montserrat Font */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 /* * {
   outline: solid 1px red;
@@ -10,8 +11,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Montserrat";
+  font-family: "Bebas Neue";
+  font-size: 18px;
   overflow-x: hidden;
+}
+
+h1 {
+  font-size: 5em;
+  margin: 0px;
+  padding: 0px;
 }
 
 .grid-container img {
@@ -34,6 +42,8 @@ body {
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .grid-container div {
@@ -69,6 +79,27 @@ body {
   position: absolute;
   z-index: 3;
   object-fit: contain;
+}
+
+.arrows {
+  width: 50px;
+  fill: rgba(255, 255, 255, 0.199);
+  z-index: 4;
+}
+
+.arrows:hover {
+  fill: rgba(255, 255, 255, 0.459);
+  transition: fill 400ms;
+}
+
+#leftArrow {
+  position: absolute;
+  left: 50px;
+}
+
+#rightArrow {
+  position: absolute;
+  right: 50px;
 }
 
 .hidden {
