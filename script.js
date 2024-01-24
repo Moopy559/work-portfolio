@@ -6,13 +6,16 @@ const modalObj = {
   rightArrow: document.querySelector("#rightArrow"),
   gridCont: document.querySelector("div.grid-container"),
   gridDivs: document.querySelectorAll(".grid-container div"),
-  imgCount: 1,
+  imgCount: 0,
   openModal: function () {
     this.gridDivs.forEach((div) => {
       div.addEventListener("click", () => {
         this.modal.classList.remove("hidden");
-        this.imgCount = div.firstChild.getAttribute("order") * 1;
-        this.modalImg.setAttribute("src", div.firstChild.getAttribute("src"));
+        this.imgCount = div.firstElementChild.getAttribute("order") * 1;
+        this.modalImg.setAttribute(
+          "src",
+          div.firstElementChild.getAttribute("src")
+        );
       });
     });
     this.keyChangeImg();
@@ -47,9 +50,8 @@ const modalObj = {
   },
   leftLogic: function () {
     if (this.imgCount === 1) {
-      let lastImg = this.gridCont.childElementCount - 1;
-      this.imgCount =
-        this.gridCont.children[lastImg].firstChild.getAttribute("order") * 1;
+      let lastDiv = this.gridCont.lastElementChild;
+      this.imgCount = lastDiv.firstElementChild.getAttribute("order") * 1;
     } else if (this.imgCount > 1) {
       this.imgCount--;
     }
@@ -73,8 +75,16 @@ const modalObj = {
       this.rightLogic();
     });
   },
+  assignOrderNo: function () {
+    let count = 1;
+    this.gridDivs.forEach((div) => {
+      div.firstElementChild.setAttribute("order", count);
+      count++;
+    });
+  },
 };
 
+modalObj.assignOrderNo();
 modalObj.openModal();
 modalObj.keepModal();
 modalObj.exitModal();
