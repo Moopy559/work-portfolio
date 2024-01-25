@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-/* * {
+* {
   outline: solid 1px red;
-} */
+}
 
 body {
   margin: 0;
@@ -173,11 +173,15 @@ h1 {
   color: rgb(9, 38, 53);
 }
 
-.blurb-container div:nth-child(2) {
+.crop {
+  max-height: 500px;
+}
+
+.right-colour {
   background-color: rgb(158, 200, 185);
 }
 
-.blurb-container div:nth-child(3) {
+.left-colour {
   background-color: rgb(250, 239, 155);
 }
 
