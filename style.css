@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-* {
+/* * {
   outline: solid 1px red;
-}
+} */
 
 body {
   margin: 0;
@@ -170,25 +170,47 @@ h1 {
 
 .blurb-container div {
   overflow: hidden;
-  color: rgb(9, 38, 53);
+  color: #030712;
+}
+
+.blurb-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blurb-container h2 {
+  font-size: 2em;
+  margin: 0px;
+  padding: 40px 60px 0px 60px;
+}
+
+.blurb-container p {
+  padding: 0px 60px 0px 60px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+  font-size: 0.8em;
+}
+
+.blurb-container a {
+  padding: 0px 60px 0px 60px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+}
+
+.blurb-container ul {
+  padding: 0px 60px 0px 60px;
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 0.8em;
 }
 
 .crop {
   max-height: 500px;
 }
 
-.right-colour {
-  background-color: rgb(158, 200, 185);
-}
-
-.left-colour {
-  background-color: rgb(250, 239, 155);
-}
-
-.blurb-container h2,
-p {
-  margin: 0px;
-  padding: 40px;
+.blurb-colour {
+  background-color: #f9fafb;
 }
 
 #paranormal {
