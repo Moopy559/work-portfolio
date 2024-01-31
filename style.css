@@ -166,6 +166,13 @@ h1 {
 .blurb-container {
   display: grid;
   grid-template-columns: 50vw 50vw;
+  grid-template-areas:
+    "code-img code-desc"
+    "graphic-desc graphic-img"
+    "user-img user-desc"
+    "render-desc render-img"
+    "chat-img chat-desc"
+    "video-desc video-img";
 }
 
 .blurb-container div {
@@ -221,4 +228,29 @@ h1 {
 #RL {
   width: 100%;
   margin-bottom: -20px;
+}
+
+@media screen and (max-width: 768px) {
+  .blurb-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "code-desc"
+      "code-img"
+      "graphic-desc"
+      "graphic-img"
+      "user-desc"
+      "user-img"
+      "render-desc"
+      "render-img"
+      "chat-desc"
+      "chat-img"
+      "video-desc"
+      "video-img";
+  }
+  .crop {
+    max-height: none;
+  }
+  .blurb-colour {
+    padding-bottom: 60px;
+  }
 }
