@@ -203,26 +203,21 @@ h1 {
 .blurb-container h2 {
   font-size: 2em;
   margin: 0px;
-  padding: 40px 60px 0px 60px;
 }
 
 .blurb-container p {
-  padding: 0px 60px 0px 60px;
   font-family: "Montserrat", sans-serif;
-  margin-top: 10px;
   font-size: 0.8em;
 }
 
 .blurb-container a {
-  padding: 0px 60px 0px 60px;
   font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
+  border: solid 2px #5be9b9;
 }
 
 .blurb-container ul {
-  padding: 0px 60px 0px 60px;
   font-family: "Montserrat", sans-serif;
-
   font-size: 0.8em;
 }
 
@@ -232,6 +227,10 @@ h1 {
 
 .blurb-colour {
   background-color: #f9fafb;
+}
+
+.blurb-colour div {
+  padding: 60px;
 }
 
 #paranormal {
@@ -263,9 +262,6 @@ h1 {
   }
   .crop {
     max-height: none;
-  }
-  .blurb-colour {
-    padding-bottom: 60px;
   }
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr;
