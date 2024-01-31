@@ -214,6 +214,16 @@ h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
   border: solid 2px #5be9b9;
+  border-radius: 999px;
+  padding: 1em;
+  text-decoration: none;
+  color: #030712;
+}
+
+.blurb-container a:hover {
+  background-color: #5be9b9;
+  color: white;
+  transition: background-color 200ms;
 }
 
 .blurb-container ul {
@@ -222,15 +232,19 @@ h1 {
 }
 
 .crop {
-  max-height: 500px;
+  max-height: 600px;
 }
 
 .blurb-colour {
   background-color: #f9fafb;
 }
 
-.blurb-colour div {
+.blurb-colour > div {
   padding: 60px;
+}
+
+.blurb-colour > div > div {
+  margin-bottom: 20px;
 }
 
 #paranormal {
