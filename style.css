@@ -253,4 +253,14 @@ h1 {
   .blurb-colour {
     padding-bottom: 60px;
   }
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+  }
+
+  .grid-container div {
+    border-radius: 0px;
+    width: 33vw;
+    height: 33vw;
+  }
 }
