@@ -270,6 +270,8 @@ h1 {
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .grid-container div {
