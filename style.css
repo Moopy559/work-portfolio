@@ -22,6 +22,20 @@ h1 {
   padding: 0px;
 }
 
+.mobile {
+  width: 100vw;
+  height: 100vh;
+  background-image: radial-gradient(circle at center, #0f172a, #020617);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile img {
+  position: absolute;
+  width: 80vw;
+}
+
 .screen {
   width: 100vw;
   max-height: 100vh;
@@ -262,5 +276,12 @@ h1 {
     border-radius: 0px;
     width: 33vw;
     height: 33vw;
+  }
+  .screen {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
   }
 }
