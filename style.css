@@ -52,6 +52,7 @@ h1 {
   color: white;
   width: 100%;
   height: 11%;
+  z-index: 1;
 }
 
 .mob-flex {
@@ -164,7 +165,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: 999;
 }
 
 #modalExit {
