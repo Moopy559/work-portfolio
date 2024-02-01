@@ -36,6 +36,14 @@ h1 {
   width: 80vw;
 }
 
+.mobile svg {
+  position: absolute;
+  fill: white;
+  opacity: 25%;
+  bottom: 5%;
+  width: 20vw;
+}
+
 .screen {
   width: 100vw;
   max-height: 100vh;
