@@ -6,6 +6,11 @@
     <title>Sam Little - Multidisciplinary Designer</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="img/favicon.png" type="image/png" />
+    <!-- MODEL-VIEWER SCRIPT -->
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"
+    ></script>
   </head>
   <body>
     <!-- MODAL -->
@@ -111,9 +116,10 @@
         <div>
           <h2>Coding and web development</h2>
           <p>
-            I have built multiple projects (including this website) from the
-            ground-up utilising HTML, CSS and Javascript. My experience also
-            extends to CMS platforms such as Wordpress.
+            Proficient web developer with a proven track record of building
+            various projects, including this website, using HTML, CSS, and
+            JavaScript. Extensive expertise also spans CMS platforms like
+            WordPress.
             <br />
             <br />
             Languages & Programs used:
@@ -145,8 +151,9 @@
         <div>
           <h2>Graphic Design</h2>
           <p>
-            In multiple roles I have been responsible for producing both print
-            and digital content to suit a wide variety of mediums.
+            Experienced graphic designer skilled in creating compelling print
+            and digital content tailored to a diverse array of mediums and
+            platforms.
             <br />
             <br />
             Programs used:
@@ -231,10 +238,20 @@
         </div>
       </div>
       <div class="crop" style="grid-area: render-img">
-        <img
-          src="img/work-img/CZone Titles_6.Advanced Monitoring and Control.jpg"
-          alt=""
-        />
+        <model-viewer
+          src="Abstract.glb"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          tone-mapping="commerce"
+          poster="poster.webp"
+          shadow-intensity="1"
+        >
+          <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+          </div>
+          <button slot="ar-button" id="ar-button">View in your space</button>
+        </model-viewer>
       </div>
       <div class="crop" style="grid-area: chat-img">
         <img src="img/work-img/chatbot.PNG" alt="" />
